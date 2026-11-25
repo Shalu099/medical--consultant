@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional medical consultancy and healthcare guidance.">
+    <title>MedCare | Medical Consultant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <a href="#home" class="logo">Med<span>Care.</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div>
+                    <p class="tagline">YOUR HEALTH, OUR PRIORITY</p>
+                    <h1>Professional Medical Guidance for a Healthier Life</h1>
+                    <p class="hero-text">
+                        Get reliable healthcare guidance and consultation
+                        support for your healthcare journey.
+                    </p>
+                    <a href="#contact" class="btn">Contact Us</a>
+                </div>
+
+                <div class="hero-card">
+                    <div class="medical-icon">✚</div>
+                    <h2>Better Care, Better Health</h2>
+                    <p>Guidance that puts your well-being first.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="about">
+            <p class="tagline">ABOUT US</p>
+            <h2>Your Health Matters</h2>
+            <p class="section-text">
+                MedCare is a medical consultancy platform designed
+                to help people understand healthcare services and
+                find appropriate consultation support.
+            </p>
+        </section>
+
+        <section class="section services" id="services">
+            <div class="container">
+                <p class="tagline">WHAT WE OFFER</p>
+                <h2>Our Services</h2>
+
+                <div class="service-grid">
+                    <article class="service-card">
+                        <span>🩺</span>
+                        <h3>Medical Consultation</h3>
+                        <p>Consultation support for general healthcare concerns.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <span>📋</span>
+                        <h3>Health Guidance</h3>
+                        <p>Information to help you navigate healthcare options.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <span>❤️</span>
+                        <h3>Wellness Support</h3>
+                        <p>General wellness information and healthy lifestyle guidance.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <p class="tagline">WHY CHOOSE US</p>
+            <h2>Care That Puts You First</h2>
+            <div class="benefits">
+                <p>✓ Easy access to information</p>
+                <p>✓ User-friendly experience</p>
+                <p>✓ Focus on patient convenience</p>
+                <p>✓ Clear communication</p>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="container">
+                <p class="tagline">GET IN TOUCH</p>
+                <h2>Contact Us</h2>
+                <p>Have a question? Send us an inquiry.</p>
+
+                <form id="contactForm">
+                    <input type="text" id="name"
+                        placeholder="Your Name" required>
+
+                    <input type="email" id="email"
+                        placeholder="Your Email" required>
+
+                    <textarea id="message"
+                        placeholder="Your Message" required></textarea>
+
+                    <button class="btn" type="submit">Send Message</button>
+                    <p id="formStatus" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 MedCare. All rights reserved.</p>
+        <p>Demo website for educational purposes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
