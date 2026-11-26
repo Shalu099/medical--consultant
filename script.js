@@ -4,8 +4,8 @@ const navLinks = document.getElementById("navLinks");
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 
-    const isOpen = navLinks.classList.contains("active");
-    menuToggle.setAttribute("aria-expanded", isOpen);
+    const isExpanded = navLinks.classList.contains("active");
+    menuToggle.setAttribute("aria-expanded", isExpanded);
 });
 
 document.querySelectorAll(".nav-links a").forEach(link => {
@@ -16,22 +16,12 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 });
 
 const contactForm = document.getElementById("contactForm");
-const formStatus = document.getElementById("formStatus");
 
-contactForm.addEventListener("submit", (event) => {
+contactForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    if (!name || !email || !message) {
-        formStatus.textContent = "Please fill in all fields.";
-        return;
-    }
-
-    formStatus.textContent =
-        "Thank you! This demo form does not send messages yet.";
+    document.getElementById("formStatus").textContent =
+        "Thank you! Your message has been received in this demo.";
 
     contactForm.reset();
 });

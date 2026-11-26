@@ -28,9 +28,11 @@
     </header>
 
     <main>
+
+        <!-- Hero Section -->
         <section class="hero" id="home">
             <div class="container hero-content">
-                <div>
+                <div class="hero-info">
                     <p class="tagline">YOUR HEALTH, OUR PRIORITY</p>
                     <h1>Professional Medical Guidance for a Healthier Life</h1>
                     <p class="hero-text">
@@ -41,66 +43,118 @@
                 </div>
 
                 <div class="hero-card">
-                    <div class="medical-icon">✚</div>
+                    <img
+                        src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700"
+                        alt="Doctor in a medical consultation">
                     <h2>Better Care, Better Health</h2>
                     <p>Guidance that puts your well-being first.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section container" id="about">
-            <p class="tagline">ABOUT US</p>
-            <h2>Your Health Matters</h2>
-            <p class="section-text">
-                MedCare is a medical consultancy platform designed
-                to help people understand healthcare services and
-                find appropriate consultation support.
-            </p>
+        <!-- About Section -->
+        <section class="section container about-section" id="about">
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700"
+                    alt="Healthcare professional helping a patient">
+            </div>
+
+            <div class="about-content">
+                <p class="tagline">ABOUT US</p>
+                <h2>Your Health Matters</h2>
+                <p class="section-text">
+                    MedCare is a medical consultancy platform designed
+                    to help people understand healthcare services and
+                    find appropriate consultation support.
+                </p>
+                <a href="#services" class="btn">Explore Services</a>
+            </div>
         </section>
 
+        <!-- Services Section -->
         <section class="section services" id="services">
             <div class="container">
                 <p class="tagline">WHAT WE OFFER</p>
                 <h2>Our Services</h2>
+                <p class="section-text">
+                    Explore healthcare guidance and wellness support.
+                </p>
 
                 <div class="service-grid">
+
                     <article class="service-card">
-                        <span>🩺</span>
-                        <h3>Medical Consultation</h3>
-                        <p>Consultation support for general healthcare concerns.</p>
+                        <img
+                            src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=600"
+                            alt="Medical consultation">
+                        <div class="service-content">
+                            <span>🩺</span>
+                            <h3>Medical Consultation</h3>
+                            <p>
+                                Consultation support for general
+                                healthcare concerns.
+                            </p>
+                        </div>
                     </article>
 
                     <article class="service-card">
-                        <span>📋</span>
-                        <h3>Health Guidance</h3>
-                        <p>Information to help you navigate healthcare options.</p>
+                        <img
+                            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600"
+                            alt="Health guidance">
+                        <div class="service-content">
+                            <span>📋</span>
+                            <h3>Health Guidance</h3>
+                            <p>
+                                Information to help you navigate
+                                healthcare options.
+                            </p>
+                        </div>
                     </article>
 
                     <article class="service-card">
-                        <span>❤️</span>
-                        <h3>Wellness Support</h3>
-                        <p>General wellness information and healthy lifestyle guidance.</p>
+                        <img
+                            src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600"
+                            alt="Wellness support">
+                        <div class="service-content">
+                            <span>❤️</span>
+                            <h3>Wellness Support</h3>
+                            <p>
+                                General wellness information and
+                                healthy lifestyle guidance.
+                            </p>
+                        </div>
                     </article>
+
                 </div>
             </div>
         </section>
 
+        <!-- Why Choose Us -->
         <section class="section container">
-            <p class="tagline">WHY CHOOSE US</p>
-            <h2>Care That Puts You First</h2>
-            <div class="benefits">
-                <p>✓ Easy access to information</p>
-                <p>✓ User-friendly experience</p>
-                <p>✓ Focus on patient convenience</p>
-                <p>✓ Clear communication</p>
+            <div class="why-us">
+                <p class="tagline">WHY CHOOSE US</p>
+                <h2>Care That Puts You First</h2>
+
+                <div class="benefits">
+                    <p>✓ Easy access to information</p>
+                    <p>✓ User-friendly experience</p>
+                    <p>✓ Focus on patient convenience</p>
+                    <p>✓ Clear communication</p>
+                </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section class="section contact" id="contact">
-            <div class="container">
-                <p class="tagline">GET IN TOUCH</p>
-                <h2>Contact Us</h2>
-                <p>Have a question? Send us an inquiry.</p>
+            <div class="container contact-container">
+                <div>
+                    <p class="tagline">GET IN TOUCH</p>
+                    <h2>Let's Talk About Your Health</h2>
+                    <p>
+                        Have a question? Send us an inquiry.
+                        We are here to help.
+                    </p>
+                </div>
 
                 <form id="contactForm">
                     <input type="text" id="name"
@@ -117,9 +171,12 @@
                 </form>
             </div>
         </section>
+
     </main>
 
+    <!-- Footer -->
     <footer>
+        <a href="#home" class="footer-logo">MedCare.</a>
         <p>© 2026 MedCare. All rights reserved.</p>
         <p>Demo website for educational purposes.</p>
     </footer>
